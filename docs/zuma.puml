@@ -10,6 +10,7 @@ class Mira
 class Base
 class Vida
 
+
 //usa
 Jugador o-- Proyectil
 Jugador o-- Mapa
@@ -28,7 +29,7 @@ Esfera *-- Mapa
 
 
 //es
-Esfera--|>
+Jugador--|>
 
 
 
