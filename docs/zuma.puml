@@ -1,33 +1,71 @@
 @startuml zuma
 
-class Jugador
-class Proyectil
-class Esfera
+class Jugador{
+    o moverse
+    -izquierda
+    -derecha
+}
+class Proyectil{
+    o moverse
+    - cualquier_lado
+
+}
+class Esfera{
+    o moverse
+    -carril
+}
 class Arena
 class Mapa
 class Carril
-class Mira
+class Mira{
+    o movimiento
+    -cualquier_lado 
+}
 class Base
 class Vida
-
-
+class Enemigo
+class Movimiento
+class Color{
+    - rojo
+    - azul
+    -verde
+}
+class Forma
+class Colicionable
 
 Jugador o-- Proyectil
+Jugador o-- Color
+Esfera o-- Color
 Jugador o-- Mapa
 Jugador o-- Base
 Jugador o-- Vida
+Jugador o-- Arena
 Esfera o-- Carril
 Jugador o-- Mira
+Mira o-- Color
+
 
 
 Jugador *-- Proyectil
+Esfera *-- Forma
+Esfera *-- Color
+Enemigo *-- Color
+Jugador *-- Color
 Jugador *-- Mira
 Jugador *-- Vida
+Esfera *-- Movimiento
 Jugador *-- Base
 Esfera *-- Carril
 Esfera *-- Mapa
+Jugador *-- Base
 
-Esfera -->| Proyectil
+
+Esfera --|> Enemigo
+Jugador --|> Colicionable
+Esfera --|> Colicionable
+
+
+
 
 
 @enduml
