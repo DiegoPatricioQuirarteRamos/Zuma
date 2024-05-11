@@ -15,7 +15,6 @@ class Esfera{
     -carril
 }
 class Arena
-class Mapa
 class Carril
 class Mira{
     o movimiento
@@ -36,7 +35,6 @@ class Colicionable
 Jugador o-- Proyectil
 Jugador o-- Color
 Esfera o-- Color
-Jugador o-- Mapa
 Jugador o-- Base
 Jugador o-- Vida
 Jugador o-- Arena
@@ -56,7 +54,6 @@ Jugador *-- Vida
 Esfera *-- Movimiento
 Jugador *-- Base
 Esfera *-- Carril
-Esfera *-- Mapa
 Jugador *-- Base
 
 
