@@ -11,7 +11,7 @@ class Base
 class Vida
 
 
-//usa
+
 Jugador o-- Proyectil
 Jugador o-- Mapa
 Jugador o-- Base
@@ -19,7 +19,7 @@ Jugador o-- Vida
 Esfera o-- Carril
 Jugador o-- Mira
 
-//tiene
+
 Jugador *-- Proyectil
 Jugador *-- Mira
 Jugador *-- Vida
@@ -27,12 +27,7 @@ Jugador *-- Base
 Esfera *-- Carril
 Esfera *-- Mapa
 
-
-//es
-Jugador--|>
-
-
-
+Esfera -->| Proyectil
 
 
 @enduml
