@@ -20,9 +20,6 @@ int main(int argc, char const *argv[])
     pantalla.Clear();
     this_thread::sleep_for(0.1s);
 
-    pantalla.PixelAt(x,5).character = "   ,     ";
-    pantalla.PixelAt(x,7).character = ".-/c-.,::";
-    pantalla.PixelAt(x,8).character = "(_)'==(_)";
 
 
 
